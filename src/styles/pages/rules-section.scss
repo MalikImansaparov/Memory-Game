@@ -1,0 +1,60 @@
+@import "../abstract/constants";
+@import "../abstract/mixins";
+
+.about-game {
+  @include page-wrapper;
+}
+
+h1 {
+  @include page-title;
+}
+
+.rule {
+  font-family: $font-family;
+  display: flex;
+  height: 24rem;
+  background: $main-inner-background;
+  margin: 2rem 5rem;
+
+  &__circle {
+    margin:30px;
+    width: 40px;
+    height: 41px;
+    background: #2196F3;
+    box-shadow: $box-shadow;
+    border-radius: 50%;
+    color: $main-inner-font-color;
+    font-size: 2.4rem;
+    @include center;
+  }
+
+  &__text {
+    color: $pages-description;
+    font-size: 1.4rem;
+    margin-top: 4rem;
+  }
+
+  &__image {
+    width: 302px;
+    height: 218px;
+    margin: auto;
+  }
+}
+
+.first {
+  background-image:url("./assets/rule-1.png");
+}
+
+.second {
+  background-image: url("./assets/rule-2.png");
+  width: 116px;
+  height: 73px;
+}
+
+.third {
+  background-image: url("./assets/rule-3.png");
+}
+
+#little-section {
+  height: 12rem;
+}

@@ -1,0 +1,56 @@
+@import "../abstract/constants";
+@import "../abstract/mixins";
+
+.score-wrapper {
+  @include page-wrapper;
+}
+
+h1 {
+  @include page-title;
+}
+
+.player-score {
+  display: flex;
+  align-items: center;
+  max-width: 85rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  font-family: $font-family;
+
+  &__image {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-image: url("./assets/const-avatar.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__description {
+    padding-left: 3rem;
+
+    .name {
+      font-weight: 500;
+      font-size: 1.4rem;
+      color: $pages-title-color;
+    }
+  }
+
+  &__result {
+    padding-left: 50rem;
+    font-size: 1.4rem;
+
+    .result-number {
+      color: $pages-decoration-color;
+    }
+  }
+}
+
+.decoration-line {
+  width: 85rem;
+  height: 1px;
+  background: $pages-decoration-line-background;
+  margin: 0 auto;
+}

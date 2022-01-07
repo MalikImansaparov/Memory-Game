@@ -1,0 +1,28 @@
+[
+  {
+    "category": "unsorted",
+    "images": [
+      "wild-eagle.png",
+      "wild-eleph.png",
+      "wild-lion.png",
+      "wild-ping.png",
+      "wild-tiger.png",
+      "wild-wolf.png",
+      "wild-lemur.png",
+      "wild-gorilla.png"
+    ]
+  },
+  {
+    "category": "wolfs",
+    "images": [
+      "wolf-two.png",
+      "wolf-sing.png",
+      "wolf-one.png",
+      "wolf-wild.png",
+      "wolf-white.png",
+      "wolf-green.png",
+      "wolf-pack.png",
+      "wolf-dad.png"
+    ]
+  }
+]

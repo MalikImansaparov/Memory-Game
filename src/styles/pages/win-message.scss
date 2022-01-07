@@ -1,0 +1,75 @@
+.win-popup {
+  position: fixed;
+  left:0;
+  top:0;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.8s ease 0s;
+}
+
+.hidden {
+  opacity:0;
+}
+
+.active {
+  opacity: 1;
+  pointer-events: auto;
+  .win-content {
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  }
+}
+
+.notScrollable {
+  overflow:hidden;
+}
+
+
+.win-content {
+  background: $popup-main-background;
+  width: 36rem;
+  height: 12rem;
+  position: relative;
+  transition: all 0.8s ease 0s;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+  font-family: $font-family;
+
+  &__title {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    max-width:30rem;
+    margin: 2rem auto;
+  }
+
+  &__button {
+    color:white;
+    padding: 10px 16px;
+    margin-left:15rem;
+    width: 53px;
+    height: 36px;
+    background: #2196F3;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+  }
+}
+
+.close-button-win {
+  position: absolute;
+  top: 6px;
+  right: 15px;
+  font-size: 20px;
+  color: $button-background;
+
+  &:hover {
+    color: #114E7E;
+  }
+
+  &:active {
+    color: $button-background;
+  }
+}

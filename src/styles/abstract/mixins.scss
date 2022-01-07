@@ -1,0 +1,41 @@
+@mixin laptop-l {
+  @media (max-width: $laptop-l-width) { @content; }
+}
+
+@mixin media-laptop {
+  @media (max-width: $content-width) { @content; }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) { @content; }
+}
+
+@mixin media-mobile {
+  @media (max-width: $mobile-big-width) { @content; }
+}
+
+@mixin media-mobile-small {
+  @media (max-width: $mobile-small-width) { @content; }
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin page-wrapper {
+  width: 100rem;
+  height: 80rem;
+  background: $main-background-color;
+  margin: 5rem auto;
+}
+
+@mixin page-title {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 20px;
+  color: $pages-title-color;
+  padding-left: 5rem;
+  padding-top: 3rem;
+}

@@ -1,0 +1,124 @@
+@import "../abstract/constants";
+@import "../abstract/mixins";
+
+.header {
+  background: $header-background-color;
+  height: 6.4rem;
+
+  &__wrapper {
+    background: $header-background-color;
+    width: 120rem;
+    height: 6.4rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media-laptop{
+      width: 100rem;
+    }
+
+    @include media-tablet{
+      width: 40rem;
+    }
+  }
+}
+
+
+.logo {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-family: $font-family;
+  text-shadow: $text-shadow;
+
+  &-first {
+    color: $main-inner-font-color;
+    width: 8rem;
+    height: 1.9rem;
+  }
+
+  &-second {
+    color: $button-contrast-font-color;
+    width: 8rem;
+    height: 1.9rem;
+    background: $main-inner-background;
+  }
+}
+
+.navigation {
+  font-family:$font-family;
+  display:flex;
+
+  &__link {
+    height: 6.4rem;
+    width: 8rem;
+    @include center;
+    flex-direction: column;
+
+    .icon-circle {
+      border-radius: $border-radius-circle;
+      width: 2rem;
+      height: 2rem;
+      font-size: 1.3rem;
+      background: $main-inner-background;
+      color: $button-contrast-font-color;
+      @include center;
+    }
+
+    .link {
+      padding-top: 5px;
+      font-size: 1.2rem;
+      color: $button-font-color;
+    }
+  }
+}
+
+.active-section {
+  background: $header-active-background-color;
+}
+
+.register-button {
+  text-transform: uppercase;
+  font-family: $font-family;
+  color: $button-contrast-font-color;
+  background: $main-inner-background;
+  width: 8.7rem;
+  height: 2.9rem;
+  @include center;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  font-weight: 500;
+  font-size: 1.4rem;
+  cursor:pointer;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.game-buttons {
+  display:flex;
+}
+
+.stop-button {
+  margin-top:1.4rem;
+  background: #E5E5E5;
+  text-transform: uppercase;
+  font-family: $font-family;
+  color: $button-contrast-font-color;
+  background: $main-inner-background;
+  width: 5rem;
+  height: 3.6rem;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  font-weight: 500;
+  font-size: 1.4rem;
+  cursor:pointer;
+  @include center;
+  border:none;
+
+  &:hover {
+    box-shadow: none;
+  }
+}

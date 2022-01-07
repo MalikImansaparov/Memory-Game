@@ -1,0 +1,13 @@
+@import "styles/abstract/constants";
+@import "styles/abstract/wrappers";
+@import "styles/base/header";
+@import "styles/pages/cards-field";
+@import "styles/pages/rules-section";
+@import "styles/pages/score-section";
+@import "styles/pages/setting-section";
+@import "styles/pages/popup.scss";
+@import "styles/pages/win-message";
+
+a {
+  text-decoration:none;
+}
