@@ -11,6 +11,8 @@ Memory Games: Brain Training are logic games to train your memory and attention.
 - SCSS
 - HTML
 - Webpack
+- Prettier
+- IndexDB
 
 ### Easy to use:
 + Download project files
