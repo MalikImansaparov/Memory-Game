@@ -7,7 +7,7 @@ import { Score } from './pages/score';
 import { Settings } from './pages/settings';
 import { Popup } from './components/popup';
 import { WinMessage } from './components/win-message';
-// eslint-disable-next-line import/prefer-default-export
+
 export class App {
   private readonly game: Game;
 
@@ -44,8 +44,6 @@ export class App {
   async startGame(): Promise<void> {
     const res = await fetch('./images.json');
     const categories: ImageCategoryModel[] = await res.json();
-
-    // Select kind of pictures (top)
     const cat = categories[1];
     const images = cat.images.map((name) => `${cat.category}/${name}`);
     this.game.newGame(images);
